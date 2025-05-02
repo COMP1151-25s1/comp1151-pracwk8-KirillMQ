@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Health Pickup
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Health
+      Pickup","summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-451.0,"y":-100.0},"guid":"914baf26-f0cf-4a9f-aaab-fb3d13cc8095","$version":"A","$type":"Unity.VisualScripting.OnTriggerEnter2D","$id":"9"},{"chainable":false,"parameterNames":["obj"],"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":249.0,"y":-103.0},"guid":"f7f45574-1a25-44e2-8098-fc16e6be6332","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"defaultValues":{},"position":{"x":121.0,"y":26.0},"guid":"fe23d09e-b558-4d89-ab94-1dd4b147bd48","$version":"A","$type":"Unity.VisualScripting.This","$id":"15"},{"defaultValues":{},"position":{"x":63.0,"y":-102.0},"guid":"4fb595f5-5392-48e4-ae0b-53d594773127","$version":"A","$type":"Unity.VisualScripting.If","$id":"17"},{"type":"UnityEngine.LayerMask","value":{"value":8,"$type":"UnityEngine.LayerMask"},"defaultValues":{},"position":{"x":-397.0,"y":23.0},"guid":"69ec8bb0-8945-4d2b-85c7-1db5f12a7bea","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"19"},{"defaultValues":{},"position":{"x":-218.0,"y":-100.0},"guid":"cd21b1cc-a606-4173-aa70-8f839013e41b","$version":"A","$type":"WordsOnPlay.Nodes.IsOnLayerNode","$id":"21"},{"sourceUnit":{"$ref":"17"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"981500c6-7ebf-4ab5-b987-3af299a09068","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"21"},"destinationKey":"inputTrigger","guid":"97b7fe2c-29dc-4961-a727-1f44f77f283f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"outputTrigger","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"a6b349c3-a880-4bb3-96ae-ed6626e25203","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"self","destinationUnit":{"$ref":"11"},"destinationKey":"%obj","guid":"007eca56-a770-4f0c-b871-e2cbab0966a7","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"output","destinationUnit":{"$ref":"21"},"destinationKey":"layer
+      mask","guid":"e57ff277-e1ba-4400-b3d2-e6aa80ece7f0","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"17"},"destinationKey":"condition","guid":"c7eeab0a-8870-4c21-8f87-f8c27ec15001","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"21"},"destinationKey":"object","guid":"3e4cbac9-51b5-40d2-859f-3174de75eea0","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
